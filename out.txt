@@ -1,0 +1,99 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Figure 6. Two equivalent representations in terms of a graph (left) and a
+matrix (right).
+
+of the equivalence of the graph and the matrix view of that
+problem.
+
+In addition, a score diagram keeps the information from
+the previous rounds. This diagram provides the opportunity
+to assess the improvement of the result over multiple rounds.
+The score diagram visualizes the cardinality of the three
+subgraphs generated from the nested dissection ordering.
+The same colors for the vertex sets Vi, V2 and S' are
+used in the graph view, the matrix view, and also for the
+corresponding curves in the score diagram, see Fig. 10.
+
+In each step of a round, the student clicks on a vertex
+in the graph view. By that, the selected vertex is assigned
+to the vertex separator. As a result, the selected vertex and
+the corresponding column will be colored orange and the
+column will be moved to the right of the matrix. Also, this
+vertex number is added to the vertex separator list, which
+saves the history of the selections as well as the possibility
+to return to that step. We remove all edges incident to the
+vertices in the vertex separator to show the effect of forming
+the three components. However, the nonzeros corresponding
+to these edges removed in the graph view are still depicted
+in the matrix view. The two components V; and V2, together
+with their corresponding matrix blocks A; and Ag, are
+colored only if a vertex separator is determined.
+
+As an example, consider a scenario where one is interested
+in finding a small vertex separator for the matrix shown in
+Fig. 6. Suppose that the student first selects the vertex 10.
+As a result the row and column number 10 is brought to the
+right of the matrix and they will be colored as orange; see
+Fig. 7. Notice that, now, all edges incident to the vertex 10
+are eliminated in the graph view, while the corresponding
+nonzeros are still shown in the matrix view. Then, the student
+needs to click on vertices repeatedly, until a vertex separator
+is found. The size of the vertex separator depends on the
+student’s choice of the vertices. It is not always possible to
+find a separator with minimal size in the first try. Fig. 8
+represents the result in which the student has clicked first
+on vertex 10 and then on 4. This result is bad since the
+number of vertices in V; and V2, corresponding to the sizes
+
+213658 94nN27 10
+
+ 
+
+Figure 7. Graph and matrix view after selecting the vertex number 10.
+The decomposition into two blocks is still not shown as the graph is not
+yet decomposed into two disconnected components.
+
+ 
+
+ 
+
+Figure 8.
+
+Graph and matrix view after selecting the vertices number 10
+and then 4. The selection is not adequate as the sizes of blocks are not
+balanced.
+
+of the blocks, is not balanced. A better result for this problem
+instance could be achieved with more effort by clicking on
+vertices 8 and 10. As shown in Fig. 9, the size of the vertex
+separator is given by 2 and the sizes of the diagonal blocks
+are balanced.
+
+A resulting score diagram from different rounds looks
+like Fig. 10. Here, the blue and red curves should have
+values close to each other since this indicates the balancing
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Figure 9. Graph and matrix view after selecting the vertices number 10 and
+then 8. The block sizes are balanced and the separator size is minimized.
+
+1126
+
